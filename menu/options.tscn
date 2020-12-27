@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://menu/GoBackButton.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 262.747
+margin_top = 114.422
+margin_right = 356.747
+margin_bottom = 133.422
+rect_scale = Vector2( 5, 5 )
+text = "Coming Soon!"
+
+[node name="GoBackButton" type="Button" parent="."]
+margin_left = 111.881
+margin_top = 209.811
+margin_right = 874.881
+margin_bottom = 360.811
+text = "Go Back"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="GoBackButton" to="GoBackButton" method="_on_GoBackButton_pressed"]
