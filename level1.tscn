@@ -5,7 +5,7 @@
 [ext_resource path="res://entity/car.tscn" type="PackedScene" id=3]
 [ext_resource path="res://entity/Landlord.tscn" type="PackedScene" id=4]
 
-[node name="Dungeon" type="Node2D"]
+[node name="City" type="Node2D"]
 
 [node name="Floor" type="TileMap" parent="."]
 position = Vector2( 2, 0 )
